@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator-css.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <center><h2>TASK 1 - CALCULATOR</h2></center>
+    <center>
+    <table id="calculator" border="1">
+        <form>
+        <tr id="firstcol">
+            <td colspan="3"><input type="text" id = 'screen'></td>
+            <td colspan="2" id="signs"><input type="button" value="=" onclick = "result()"  class="size"></td>
+            
+        </tr>
+        <tr>
+        
+            <td><input type="button" value="1" onclick = "solve('1')" class="size"></td>
+            <td><input type="button" value="2" onclick = "solve('2')" class="size"></td>
+            <td><input type="button" value="3" onclick = "solve('3')" class="size"></td>
+            <td id="signs"><input type="button" value="/" onclick = "solve('/')" class="size"></td>
+        
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick = "solve('4')" class="size"></td>
+            <td><input type="button" value="5" onclick = "solve('5')" class="size"></td>
+            <td><input type="button" value="6" onclick = "solve('6')" class="size"></td>
+            <td id="signs"><input type="button" value="x" onclick = "solve('*')" class="size"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick = "solve('7')" class="size" class="size"></td>
+            <td><input type="button" value="8" onclick = "solve('8')" class="size"></td>
+            <td><input type="button" value="9" onclick = "solve('9')" class="size"></td>
+            <td id="signs"><input type="button" value="+" onclick = "solve('+')" class="size"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick = "solve('.')"  class="size"></td>
+            <td><input type="button" value="0" onclick = "solve('0')" class="size"></td>
+            <td id="signs"><input type="button" value="C" id="clear" onclick = "Clear()" class="size"></td>
+            <td id="signs"><input type="button" value="-" onclick = "solve('-')" class="size"></td>
+
+
+        </tr>
+    </form>
+    </table>
+</center>
+<script src="calculator.js">
+</script>
+</body>
+</html>
